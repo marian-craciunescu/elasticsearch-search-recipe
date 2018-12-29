@@ -44,8 +44,8 @@ public class IndexRecipesApp {
 
             Settings settings = Settings.builder()
                     .put("client.transport.sniff", false)
-                    .put("cluster.name", "siscale-lab-cluster")
-                    .put("xpack.security.user", "elastic:elastic")
+                    .put("cluster.name", "mycluster-lab-cluster")
+                    .put("xpack.security.user", "elastic:changeme")
                     .build();
 
             TransportClient client = new PreBuiltXPackTransportClient(settings).addTransportAddress(new TransportAddress(InetAddress.getByName(host), 9300));
